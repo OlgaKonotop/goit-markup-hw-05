@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body>
+<body data-page>
 	<!--шапка -->
 
 
@@ -51,7 +51,7 @@
 		<section class="hero hero-bg">
 			<div class="container hero-container ">
 				<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-				<button class="btn-hero " type="button">Заказать услугу</button>
+				<button class="btn-hero" data-modal-open type="button">Заказать услугу</button>
 			</div>
 		</section>
 		<!-- Section about  Особенности -->
@@ -412,6 +412,21 @@
 	</div>
 
 </footer>
+
+<!-- Modal window -->
+<div class="backgrop is-hidden" data-modal>
+	<div class="modal">
+		<button class="modal-btn" data-modal-close>
+			<svg class="modal-btn-icon" width="18px" height="18px">
+				<use href="./images/icons.svg#close"></use>
+			</svg>
+		</button>
+
+	</div>
+
+</div>
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
